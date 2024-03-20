@@ -68,9 +68,9 @@ initial_pokemons = [
         "image_url": "https://storage.googleapis.com/firstpenguine-coding-school/pokemons/nuo.webp",
     },
     {
-        "name": "갸라도스",
+        "name": "러다이트 운동",
         "types": ["물", "비행"],
-        "image_url": "https://storage.googleapis.com/firstpenguine-coding-school/pokemons/garados.webp",
+        "image_url": "https://i.namu.wiki/i/XuDe2WGyVZYqjy1aqIGYjSoLm2L1a1M-nvhBN1YaAKIQ_oA-k-jGnY9DMWDgWjaGbtLKZsjKQhmjwYUNnTymPx3qVOc9IQ2eCmtsVigHUo0Arl0VIdp_hma-VCUk4f2QK-TC8fNWPCximOKDDl5oYg.webp",
     },
     {
         "name": "개굴닌자",
