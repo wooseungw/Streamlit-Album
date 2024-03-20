@@ -162,16 +162,20 @@ for i in range(num_rows):
                 st.video(st.session_state.video_links[index])
 
 for i in range(0, len(st.session_state.pictures), 2):
-    row_pictures = st.session_state.pictures[i:i+2]
+    row_pokemons = st.session_state.pictures[i:i+2]
     cols = st.columns(2)
-    for j in range(len(row_pictures)):
+    for j in range(len(row_pokemons)):
         with cols[j]:
-            picture = row_pictures[j]
-            with st.expander(label=f"**{i+j+1}. {picture['name']: <10}, {picture['year']}**", expanded=True):
-                st.image(picture["image_url"],use_column_width=True)
-                emoji_types = [f"{type_emoji_dict[x]} {x}" for x in picture["types"]]
-                st.text(" /".join(emoji_types))
-                delete_button = st.button(label="삭제", key=i+j, use_container_width=True)
-                if delete_button:
-                    del st.session_state.pictures[i+j]
-                    st.rerun()
+            pokemon = row_pokemons[j]
+            with st.expander(label=f"**{i+j+1}. {pokemon['name']}**", expanded=True):
+                st.image(pokemon["image_url"],use_column_width=True)
+                emoji_types = [f"{type_emoji_dict[x]} {x}" for x in pokemon["types"]]
+                st.text(" / ".join(emoji_types))
+                sub_col1,sub_col2 = st.columns(2)
+                with sub_col1:
+                    delete_button = st.button(label="삭제", key=i+j, use_container_width=True)
+                    if delete_button:
+                        del st.session_state.pictures[i+j]
+                        st.rerun()
+                with sub_col2:
+                    download_button = st.download_button("다운로드",data=pokemon["image_url"],key=f"download_{i+j}",use_container_width=True)
