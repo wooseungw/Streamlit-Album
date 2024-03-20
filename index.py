@@ -73,9 +73,9 @@ initial_pokemons = [
         "image_url": "https://i.namu.wiki/i/XuDe2WGyVZYqjy1aqIGYjSoLm2L1a1M-nvhBN1YaAKIQ_oA-k-jGnY9DMWDgWjaGbtLKZsjKQhmjwYUNnTymPx3qVOc9IQ2eCmtsVigHUo0Arl0VIdp_hma-VCUk4f2QK-TC8fNWPCximOKDDl5oYg.webp",
     },
     {
-        "name": "개굴닌자",
+        "name": "메이플자이",
         "types": ["물", "악"],
-        "image_url": "https://storage.googleapis.com/firstpenguine-coding-school/pokemons/frogninja.webp"
+        "image_url": "https://i.namu.wiki/i/YzFysjx3NdoZEgJURxDhnJjygzk2vUh8ebQIjBYpOSxQRff19LlBT2PrzUZvrfXu3dhE3Rw-ioatfnt1kmDp1SUKTF_LpxNnsaMrwUiuZHGyzU08Fs_WzoVIAneJF1WTAH-miSAZAOv_aDLspPHP_g.webp"
     },
     {
         "name": "루카리오",
