@@ -3,7 +3,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="포켓몬 도감",
-    page_icon="Streamlit-Album/images/monsterball.png",
+    page_icon="images/monsterball.png",
 )
 
 st.markdown("""
@@ -29,7 +29,7 @@ img {
 """, unsafe_allow_html=True)
 
 
-st.image("Streamlit-Album/images/default.png",
+st.image("images/default.png",
          width=50)
 st.title("streamlit 포켓몬 도감")
 st.markdown("**포켓몬**을 하나씩 추가해서 도감을 채워보세요!")
@@ -100,7 +100,7 @@ example_pokemon = {
 }
 
 auto_complete = st.toggle("예시 데이터로 채우기")
-with st.form():
+with st.form("form"):
     col1, col2 = st.columns(2)
     with col1:
         name = st.text_input(
